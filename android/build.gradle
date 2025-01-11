@@ -38,6 +38,14 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
+    compileOptions {
+        // Either set these to 1.8 (Java 8) or 17, just make them match.
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
