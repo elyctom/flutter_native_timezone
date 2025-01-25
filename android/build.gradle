@@ -36,8 +36,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    // Add namespace to prevent resource conflicts
-    namespace 'io.flutter.plugins.timezone'
+    namespace 'com.whelksoft.flutter_native_timezone'
     
     lintOptions {
         disable 'InvalidPackage'
